@@ -15,7 +15,7 @@ The following files are universal, and can be executed using system Python.
 1. Save the script as:
 
    ```bash
-   dxf_to_step.py
+   dxf_to_3d_v2.py
    ```
 
 2. Place your DXF file in the same directory:
@@ -27,7 +27,7 @@ The following files are universal, and can be executed using system Python.
 3. Run:
 
    ```bash
-   python dxf_to_step.py
+   python dxf_to_3d_v2.py
    ```
 
 4. Output:
