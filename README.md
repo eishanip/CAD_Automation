@@ -45,3 +45,25 @@ The following files are universal, and can be executed using system Python.
 - CATIA
 
 It is recommended to run the final file using Conda, as PythonOCC and CadQuery are open-source libraries, and not of a stable build so far. Due to this, the code may sometimes return unexpected results.
+
+# Final Divided Scripts as per functionality:
+
+DXF to 3D STEP Converter - Modular Architecture, Annotation-driven with a rule-based fallback approach
+
+## Requirements:
+pip install ezdxf cadquery
+
+Project Structure:
+- config.py: Configuration and tolerance settings
+- geometry_parser.py: DXF parsing and edge extraction
+- profile_detector.py: Profile chaining and classification
+- feature_detector.py: Feature recognition and annotation parsing
+- cad_builder.py: 3D model construction
+- main.py: Main converter orchestration
+
+## Usage:
+    from dxf_converter import DXFTo3DConverter
+    
+    converter = DXFTo3DConverter('input_sketch.dxf')
+    converter.process()
+    converter.export_step('output_part.step')
